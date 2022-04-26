@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    
+   
+}
+
+.naslov{
+    background-color: #222222;
+    text-align: center;
+}
+
+.nalov-glavni{
+    font-size: 3rem;
+    color: #cc8502;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin:150px;
+
+}
+
+.nalov-glavni::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 70%);
+  height: 3px;
+  width: 140%;
+  background: #cc8502;
+}
+.about{
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: 150px;
+    background-color: #222;
+    
+}
+
+.about-section{
+    background: url(../aboutpic/onama.jpg) no-repeat right;
+    background-size: 65%;
+    background-color: #222;
+    overflow: hidden;
+    padding: 100px 0;
+    
+}
+
+.inner-container{
+    width: 55%;
+    float: left;
+    background-color: #cc8502;
+    padding: 150px;
+}
+
+.inner-container h2{
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 900;
+    float: right;
+}
+
+.text{
+    font-size: 16px;
+    color: #222;
+    text-align: justify;
+    margin-bottom: 40px;
+    float: right;
+
+}
+
+
+
+/* Druga strana */
+
+.about-section-ispod{
+    background: url(../aboutpic/onama.jpg) no-repeat right;
+    background-size: 65%;
+    background-color: #222;
+    overflow: hidden;
+    padding: 100px 0;
+    
+}
+
+.inner-container-ispod{
+    width: 55%;
+    float: left;
+    background-color: #cc8502;
+    padding: 150px;
+}
+
+.inner-container-ispod h2{
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 900;
+    float: right;
+}
+
+.text-ispod{
+    font-size: 16px;
+    color: #222;
+    text-align: justify;
+    margin-bottom: 40px;
+    float: right;
+
+}
+
+#about-kraj{
+    background-color: #cc8502;
+    color: #222;
+    padding: 100px 0;
+}
+
+.prva{
+    padding: 30px 0;
+}
+
+.kraj-naslov{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 20px 30px;
+}
+
+.text-kraj{
+    font-size: 18px;
+    color: #222;
+    line-height: 35px;
+    text-align: justify;
+    margin-bottom: 40px;
+    margin:10px 30px;
+}
+
+.carousel-item img{
+    width: 500px;
+    height: 500px;
+}
+
+/* End About Ispod Section */
+
+
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 50px;
+    }
+    .inner-container-ispod{
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 200px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+
+    .about-section-ispod{
+        background-size: 100%;
+        padding: 200px 40px;
+    }
+    .inner-container-ispod{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section-ispod{
+        background-size: 200%;
+        padding: 50px 10px;
+    }
+    .inner-container-ispod{
+        padding: 20px;
+        font-size: 18px;
+    }
+}
